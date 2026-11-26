@@ -4,12 +4,8 @@
   <meta charset="UTF-8">
   <title>Бурмалда</title>
   <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-      background: red;
-      overflow: hidden;
-    }
+    html, body { margin: 0; height: 100%; overflow: hidden; background: red; }
+    @media (max-width: 768px) { html, body { background: blue; } }
     .word {
       position: absolute;
       top: 50%;
@@ -27,3 +23,4 @@
   <div class="word">БУРМАЛДА</div>
 </body>
 </html>
+
