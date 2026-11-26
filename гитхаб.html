@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Бурмалда</title>
-  <style>
-    html, body { margin: 0; height: 100%; overflow: hidden; background: red; }
-    @media (max-width: 768px) { html, body { background: blue; } }
-    .word {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-      font-size: 10vw;
-      font-weight: bold;
-      font-family: Arial, sans-serif;
-      text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фон: ПК — синий, Телефон — красный</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: #0066ff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-color: #ff0000;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="word">БУРМАЛДА</div>
 </body>
 </html>
-
